@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="particles-js" oncontextmenu="return false;">
+<body id="particles-js" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 
   <div class="linktree__container col-xl-6 col-lg-8 col-md-11 col-sm-12 p-0">
  	
@@ -120,22 +120,7 @@ document.onkeydown = function (e) {
         return false;
 }
     document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
-  <script>
-var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-function mischandler(){
-return false;
-}
-function mousehandler(e){
-var myevent = (isNS) ? e : event;
-var eventbutton = (isNS) ? myevent.which : myevent.button;
-if((eventbutton==2)||(eventbutton==3)) return false;
-}
-document.oncontextmenu = mischandler;
-document.onmousedown = mousehandler;
-document.onmouseup = mousehandler;
-</script>
+  </script>
 </body>
 
 </html>

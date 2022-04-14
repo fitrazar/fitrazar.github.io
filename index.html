@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zar's Link</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="particles-js">
+
+  <div class="linktree__container col-xl-6 col-lg-8 col-md-11 col-sm-12 p-0">
+ 	
+    <div class="linktree__wrap"
+    Header -->
+      <header class="linktree__header">
+      	<div>
+        <img alt="Merchant Logo" src="img/Slice vector.jpg" class="linktree__merchant--logo" ></div>
+        <div>
+        <h1 class="linktree__title">Muhammad Fitra Fajar</h1>
+        <P class="lintree__profile">@vzar__</P></div>
+      </header>
+      <!-- Main -->
+      <main class="linktree__main--content">
+        <!-- Link Buttons-->
+        <div class="linktree__links">
+          <!-- Link Button -->
+          <div class="linktree__links--item">
+            <a href="#" class="btn third" target="_blank" rel="noopener noreferrer">
+              Link Pertama
+            </a>
+          </div>
+          <div class="linktree__links--item">
+            <a href="#" class="btn third" target="_blank" rel="noopener noreferrer">
+              Link Kedua
+            </a>
+          </div>
+          <div class="linktree__links--item">
+            <a href="#" class="btn third" target="_blank" rel="noopener noreferrer">
+              Link Ketiga
+            </a>
+          </div>
+
+          <!-- Iframe Youtube -->
+        </div>
+
+        <!-- Social Link Icons -->
+        <div class="linktree__social--links">
+          	<img src="img/instagram.png" onclick="_instagram();" class="ri-instagram-line icon" alt="instagram"> 
+            <img src="img/telegram.png" onclick="_telegram();" class="ri-facebook-circle-fill icon" alt="telegram">
+            <img src="img/whatsapp.png" onclick="_whatapps();" class="ri-whatsapp-line icon" alt="whatsapp">
+            <img src="img/youtube.png" onclick="_youtube();" class="ri-youtube-line icon" alt="youtube">
+        </div>
+
+        <!--<div class="linktree__social--links">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+          	<img class="linktree__social--links__logo" width="38" src="img/instagram.png" alt="instagram" /> 
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img class="linktree__social--links__logo" width="38" src="img/tik-tok.png" alt="tiktok" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img class="linktree__social--links__logo" width="38" src="img/twitter.png" alt="twitter" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img class="linktree__social--links__logo" width="38" src="img/youtube.png" alt="youtube" />
+          </a>
+        </div>-->
+      </main>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="particles.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script>
+  var title = "Assalamualaikum";
+  var deskripsi= " Salam Kenal";
+  var currentLocation = window.location;
+  var top = (screen.height - 570) / 2;
+  var left = (screen.width - 570) / 2;
+  var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+  console.log(encodeURI(title+deskripsi));
+    function _whatapps(){
+      var url="https://api.whatsapp.com/send?phone=+6281385931773&text=" + encodeURI(title +" "+deskripsi);
+      window.open(url,params);
+    }
+    function _gmail(){
+      var url="https://mail.google.com/mail/?view=cm&to=fitra6751@gmail.com&su=" + encodeURI(title) + "&body=" + encodeURI(currentLocation + deskripsi);
+      window.open(url,params);
+    }
+    function _telegram(){
+      var url="https://telegram.me/share/url?url=https://t.me/vzar1" + encodeURI(currentLocation) + "&text=" +encodeURI(title + deskripsi);
+      window.open(url,params);
+    }
+    function _instagram(){
+      var url="https://www.instagram.com/vzar__/";
+      window.open(url,params);
+    }
+    function _youtube(){
+      var url="https://www.youtube.com/channel/UCjkdugqQIUivXPdbL9s8IYg";
+      window.open(url,params);
+    }
+ </script>
+ <script>
+function musicStart() {
+    pop = window.open('', 'back__music', 'width=100,height=100', true);
+    if (back__music.location.href === 'about:blank') {
+        pop.document.write('<audio controls autoplay loop><source src="audio.mp3" type="audio/mp3"/></audio>');
+    }
+}
+   </script>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>

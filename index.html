@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="particles-js">
+<body id="particles-js" oncontextmenu="return false;">
 
   <div class="linktree__container col-xl-6 col-lg-8 col-md-11 col-sm-12 p-0">
  	
@@ -115,10 +115,12 @@ function musicStart() {
     }
 }
    </script>
+  <script>
+document.onkeydown = function (e) {
+        return false;
+}
+    </script>
 </body>
 
 </html>
 <!-- partial -->
-  
-</body>
-</html>

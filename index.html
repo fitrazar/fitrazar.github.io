@@ -116,11 +116,10 @@ function musicStart() {
 }
    </script>
   <script>
-document.onkeydown = function (e) {
-        return false;
-}
-    document.addEventListener('contextmenu', event => event.preventDefault());
-  </script>
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+}, false);
+</script>
 </body>
 
 </html>
